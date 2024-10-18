@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --principal: #FFFFFF;
+    --secundario: #C0C0C0;
+    --botao: #167BF7;
+    --cor-de-fundo: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--principal);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url('img/Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    display: block;
+    text-decoration: none;
+    background-color: var(--botao);
+    color: var(--principal);
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: #0b468f;
+    color: rgb(253, 253, 253);
+}
+
+.container_secundario {
+    background-color: transparent;
+    border: 2px solid var(--principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__description {
+    width: 90%;
+}
+
+.secundario__image {
+    width: 75%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 0 0 9em;
+}
+
+.description__titulo {
+    text-align: 48px;
+    font-weight: 700;
+    color: var(--principal);
+    margin-bottom: 0.1em;
+}
+
+.description__paragrafo {
+    color: var(--secundario);
+}
+
+.secundario__botao {
+    margin: 1em 0 0 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.fourthsection_image {
+    width: 84%;
+    margin: 0 0 0 5em;
+}
+
+.terciario {
+    margin: 0
+}
+
+.container_ultimo {
+    height: 75vh;
+    text-align: center;
+}
+
+.ultimo_titulo {
+    margin-bottom: 1em;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.ultimo__icones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    text-align: center;
+    margin: 0 5em;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    list-style: none;
+    margin: 1.5em 0;
+}
+
+.links__conteudo {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--principal)
+}
+
+.links__conteudo:hover {
+    color: var(--botao);
+}
+
+.links__conteudo:active {
+    color: pink
+}
+
+.footer__paragrafo {
+    margin: 0 0 1.5em 0;
+    color: var(--secundario)
+}
