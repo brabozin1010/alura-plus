@@ -5,6 +5,7 @@
     --secundario: #C0C0C0;
     --botao: #167BF7;
     --cor-de-fundo: #00030C;
+    --botao-hovered: #0b468f;
 }
 
 * {
@@ -45,8 +46,7 @@ body {
 }
 
 .container__botao:hover {
-    background-color: #0b468f;
-    color: rgb(253, 253, 253);
+    background-color: var(--botao-hovered);
 }
 
 .container_secundario {
