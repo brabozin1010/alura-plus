@@ -41,7 +41,7 @@ body {
     color: var(--principal);
     padding: 1em;
     border-radius: 8px;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 .container__botao:hover {
@@ -97,7 +97,7 @@ body {
 }
 
 .secundario__botao {
-    margin: 1em 0 0 0;
+    margin: 1em 0 2em 0;
     text-align: center;
     display: inline-block;
 }
@@ -105,6 +105,10 @@ body {
 .fourthsection_image {
     width: 84%;
     margin: 0 0 0 5em;
+}
+
+.image {
+    width: auto;
 }
 
 .terciario {
@@ -157,4 +161,63 @@ body {
 .footer__paragrafo {
     margin: 0 0 1.5em 0;
     color: var(--secundario)
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: inline-block;
+        background-image: none;
+        height: 100vw;
+        text-align: center;
+    }
+
+    .container__image {
+        width: 70vw;
+
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .container__description {
+        margin-left: 1.5em;
+    }
+
+    .secundario__image {
+        width: 50vw;
+    }
+
+    .fourthsection_image {
+        margin: 0;
+    }
+
+    .container_ultimo {
+        text-align: center;
+    }
+
+    .ultimo__icones {
+        display: block;
+    }
+
+    .footer__links {
+        display: block;
+    }
+
+    .links__conteudo {
+        margin: 10em 0 0 0;
+    }
+
+    .links__item {
+        margin: 0.3em 0 0 0;
+    }
+
+    .footer{
+        padding-top: 30em;
+    }
 }
